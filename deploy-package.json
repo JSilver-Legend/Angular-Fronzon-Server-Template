@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "font-awesome": "4.7.0"
+  },
+  "devDependencies": {
+    "express": "^4.17.1",
+    "https": "^1.0.0",
+    "sequelize": "^6.3.5",
+    "body-parser": "^1.19.0",
+    "mysql2": "^2.2.5"
+  },
+  "scripts": {
+    "start": "nodemon server.js -e ejs,css,html,js"
+  }
+}

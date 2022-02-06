@@ -1,0 +1,39 @@
+{
+  "extends": "tslint:recommended",
+  "rules": {
+      "max-line-length": {
+          "options": [120]
+      },
+      "new-parens": true,
+      "no-arg": true,
+      "no-bitwise": true,
+      "no-conditional-assignment": true,
+      "no-consecutive-blank-lines": true,
+      "newline-per-chained-call": false,
+      "no-redundant-jsdoc": true,
+      "no-unnecessary-callback-wrapper": true,
+      "ordered-imports": true,
+      "prefer-method-signature": true,
+      "prefer-template": true,
+      "unnecessary-else": false,
+      "newline-before-return": true,
+      "no-magic-numbers": true,
+      "no-parameter-reassignment": true,
+      "no-duplicate-super": true,
+      "no-empty": true,
+      "no-shadowed-variable": true,
+      "triple-equals": true,
+      "no-duplicate-imports": true,
+      "no-var-requires": false,
+      "class-name": true,
+      "no-console": {
+          "severity": "warning",
+          "options": ["debug", "info", "log", "time", "timeEnd", "trace"]
+      }
+  },
+  "jsRules": {
+      "max-line-length": {
+          "options": [120]
+      }
+  }
+}

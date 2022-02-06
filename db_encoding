@@ -1,0 +1,3 @@
+## Create with: CREATE DATABASE emss CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+db:
+  latin1_swedish_ci

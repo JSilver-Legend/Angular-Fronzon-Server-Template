@@ -1,0 +1,6 @@
+#!/bin/sh
+
+until nc -z localhost "3307"; do
+  >&2 echo "database service is not yet started - sleeping"
+  sleep 1
+done

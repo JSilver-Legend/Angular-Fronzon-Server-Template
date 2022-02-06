@@ -1,0 +1,62 @@
+{
+  "name": "frozen-iguan",
+  "version": "1.0.0",
+  "description": "Frozen Iguan server",
+  "main": "index.ts",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test:integration": "rm -rf build && npm run build && docker-compose down && docker-compose build && docker-compose up --abort-on-container-exit",
+    "tsc": "tsc",
+    "build": "tsc",
+    "dev": "./wait && ts-node-dev --respawn --transpile-only ./src/server.ts",
+    "prod": "tsc && node ./build/server.js",
+    "lint": "tslint ./src/**/*.ts",
+    "lint:fix": "tslint --fix ./src/**/*.ts",
+    "check": "npm run lint && npm run prettify && npm run prettier:check && npm run build && npm run test",
+    "sequelize": "sequelize-cli"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/hervinhio/frozen-iguan.git"
+  },
+  "author": "Hervé Mutombo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hervinhio/frozen-iguan/issues"
+  },
+  "homepage": "https://github.com/hervinhio/frozen-iguan#readme",
+  "dependencies": {
+    "@types/express": "^4.17.11",
+    "@types/sequelize": "^4.28.10",
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "cookies": "^0.8.0",
+    "express": "^4.17.1",
+    "finale-rest": "^1.1.1",
+    "jsonwebtoken": "^8.5.1",
+    "live-server": "^1.2.1",
+    "mongodb": "^3.6.10",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.2.5",
+    "prettier": "^2.2.1",
+    "prettify": "^0.1.7",
+    "sequelize": "^6.5.0",
+    "sequelize-cli": "^6.2.0",
+    "sequelize-restful": "^0.4.3",
+    "tsc": "^1.20150623.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@types/mongodb": "^3.6.20",
+    "@types/node": "^14.14.22",
+    "cors": "^2.8.5",
+    "jasmine": "^3.6.4",
+    "nodemon": "^2.0.7",
+    "sequelize-mock": "^0.10.2",
+    "ts-node": "^9.1.1",
+    "ts-node-dev": "^1.1.1",
+    "tslint": "^6.1.3",
+    "typescript": "^4.1.3"
+  }
+}

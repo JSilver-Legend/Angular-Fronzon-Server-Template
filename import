@@ -1,0 +1,2 @@
+#!/bin/bash
+mysql --defaults-extra-file=./db.ini -u tas -h 127.0.0.1 -P 3307 < mysql/dumps/import.sql

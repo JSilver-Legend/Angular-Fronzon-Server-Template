@@ -1,0 +1,9 @@
+#!/bin/sh
+
+until nc -z database "3307"; do
+  >&2 echo "database service is not yet started - sleeping"
+  sleep 1
+done
+
+npm run start
+# node server
