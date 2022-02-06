@@ -1,0 +1,5 @@
+ '{"fixed": { "amount": 0.5, "label": "INNET" },"ratio": [{ "amount": 50, "label": "ULTIM" },{ "amount": 30, "label": "EMSS" },{ "amount": 25, "label": "FONCT" },{ "amount": 5, "label": "HONME" }]}';
+date: '2019/1/1';
+
+fixed(0.5, "INNET");ratio(50, "ULTIM");ratio(30, "EMSS");ratio(25, "FONC");ratio(4, "HONME");
+

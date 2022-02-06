@@ -1,0 +1,6 @@
+'{"fixed": { "amount": 0.5, "label": "INNET" },"ratio": [{ "amount": 50, "label": "REACO" },{ "amount": 50, "ratio": [{ "amount": 10, "label": "HONME" },{ "amount": 30, "label": "EMSS" },{ "amount": 40, "label": "PRIME" },{ "amount": 15, "label": "PRESM" },{ "amount": 5, "label": "CONBE" }]}]}';
+"2020/12/1"
+
+fixed(0.5);ratio(50, "REACO");ratio(5, "HONME");ratio(15, "EMSS");ratio(20, "PRIME");ratio(7.5, "PRESM");ratio(2.5, "CONBE");
+
+LABORATOIRE

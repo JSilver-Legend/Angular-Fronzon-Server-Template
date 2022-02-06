@@ -1,0 +1,6 @@
+{"fixed": { "amount": 1, "label": "INNET" },  "ratio": [{ "amount": 50, "label": "INTRA" },{"amount": 50, "ratio": [{ "amount": 50, "label": "PERSO" },{ "amount": 30, "label": "EMSS" },{ "amount": 20, "label": "FF" }]}]}'
+'2020/11/1'
+
+fixed(1, "INNET");ratio(50, "INTRA");ratio(25, "PERSO");ratio(15, "EMSS");ratio(10, "FF");
+
+HEMODIALYSE

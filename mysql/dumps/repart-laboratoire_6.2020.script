@@ -1,0 +1,7 @@
+'{"fixed": { "amount": 0.5, "label": "INNET" },"ratio": [{ "amount": 10, "label": "HONME", "takeOn": { "field": "source", "value": "EXAMEN" }},{ "amount": 90, "ratio": [{ "amount": 50, "label": "REACT" },{ "amount": 50, "ratio": [{ "amount": 40, "label": "PERSO" },{ "amount": 30, "label": "EMSS" },{ "amount": 20, "label": "MAINT" },{ "amount": 10, "label": "AUCON" }]}]}]}'
+
+"2020/6/1"
+
+fixed(0.5, "INNET");conditionalRatio(10, { field: "type", value: "EXAMEN" }, "HONME"){ratio(45, { field: "type", value: "EXAMEN" }, "REACT");ratio(18, { field: "type", value: "EXAMEN" }, "PERSO");ratio(13.5, { field: "type", value: "EXAMEN" }, "EMSS");ratio(9, { field: "type", value: "EXAMEN" }, "MAINT");ratio(4.5, { field: "type", value: "EXAMEN" }, "AUCON");}else{ratio(50, { field: "type", value: "EXAMEN", equality: "not" }, "REACT");ratio(20, { field: "type", value: "EXAMEN", equality: "not" }, "PERSO");ratio(15, { field: "type", value: "EXAMEN", equality: "not" }, "EMSS");ratio(10, { field: "type", value: "EXAMEN", equality: "not" }, "MAINT");ratio(5, { field: "type", value: "EXAMEN", equality: "not" }, "AUCON");}
+
+LABORATOIRE

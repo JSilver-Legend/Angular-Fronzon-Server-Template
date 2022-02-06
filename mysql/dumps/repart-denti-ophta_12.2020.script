@@ -1,0 +1,6 @@
+'{"fixed": { "amount": 0.5, "label": "INNET" },"ratio": [{ "amount": 40, "label": "ULTIM" },{ "amount": 30, "label": "EMSS" },{ "amount": 20, "label": "HONME" },{ "amount": 6, "label": "PRIME" },{ "amount": 2, "label": "INTRA" },{ "amount": 2, "label": "CONBE" }]}'
+"2020/12/1"
+
+fixed(0.5, "INNET");ratio(40, "ULTIM");ratio(30, "EMSS");ratio(20, "HONME");ratio(6, "PRIME");ratio(2, "INTRA");ratio(2, "CONBE");
+
+OPHTALMOLOGIE/DENTISTERIE
